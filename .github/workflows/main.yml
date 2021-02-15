@@ -66,7 +66,7 @@ jobs:
         with:
           name: skim_ggH
       - name: Download from plot
-        uses: actions/download@v2
+        uses: actions/download-artifact@v2
         with:
           name: histograms
       - name: cutflow test
