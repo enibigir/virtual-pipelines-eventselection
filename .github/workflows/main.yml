@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: skim6.22.06-conda
       - name: skim
@@ -49,7 +49,7 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: skim_ggH
       - name: plot
@@ -66,11 +66,11 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v2
       - name: Download from skim
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: skim_ggH
       - name: Download from plot
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: histograms
       - name: cutflow test
